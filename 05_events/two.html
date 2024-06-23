@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+</head>
+<body>
+    <h1>Chai aur code</h1>
+    <h2>Hello Akash</h2>
+    <button id="stop">Stop</button>
+</body>
+
+<script>
+    // document.querySelector('#stop').addEventListener('click',function(e){
+    //     // console.log(e);
+    //     console.log('clicked');
+    //     setTimeout(function() {
+    //         document.querySelector('h1').innerHTML="Best Js series"
+    //     },2000)
+    // },false)
+
+    // const sayMyname = function(){
+    //     document.querySelector('h2').innerHTML="Welcome Akash Kaushik"
+    // }
+
+    // document.querySelector('h2').addEventListener('mouseover',function(e){
+    //     console.log(e);
+    //     setTimeout(sayMyname,2000)
+    // },false)
+
+    const sayHitesh = function(){
+        console.log("Hitesh");
+    }
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best JS series"
+    }
+
+    const changeMe = setTimeout(changeText, 2000)
+
+    document.querySelector('#stop').addEventListener('click', function(){
+        clearTimeout(changeMe)
+        console.log("STOPPED")
+    })
+
+
+     // setTimeout
+    // The global setTimeout() method sets a timer which executes a function
+    //  or specified piece of code once the timer expires.
+
+    // clearTimeout
+
+    // The global clearTimeout() method cancels a timeout previously established
+    //  by calling setTimeout().
+    // If the parameter provided does not identify a previously established action,
+    // this method does nothing.
+</script>
+</html>
